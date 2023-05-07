@@ -1,0 +1,378 @@
+#logo{
+    height: 70px;
+    margin: 0px 0px 0px 20px;
+    background-color: whitesmoke;
+    border-radius: 5px 5px 5px 5px;
+    padding: 10px 10px 10px 10px;
+    vertical-align: middle;
+}
+
+#imghome{
+    max-width:max-content;
+    height: auto;
+    width:1400px;
+}
+
+#imgtext{
+    position: relative;
+    text-align: center;
+    color: #174C4F;
+    font-size: 40px;
+}
+
+#imgtext > .imgtext1{
+    position: absolute;
+    bottom: 54px;
+    left: 16px;
+    background-color:whitesmoke;
+    border-radius: 15px 15px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+#imgtext > .imgtext2{
+    position: absolute;
+    bottom: 10px;
+    left: 16px;
+    background-color: whitesmoke;
+    border-radius: 0px 15px 15px 15px;
+}
+
+#fietsmaker{
+  float: right;
+  width: 25%;
+  height: auto;
+  padding-right: 40px;
+}
+
+#contactformulier{
+  padding-left: 40px;
+}
+
+#imgonderhoud{
+  float: right;
+  width: 22%;
+  height: auto;
+  padding-right: 20px;
+}
+
+.contact{
+  padding-top: 60px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+}
+
+h2{
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
+body{
+  max-width: 1400px;
+  margin: 20px auto;
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: #174C4F;
+  text-decoration: none; 
+}
+
+h1{
+text-align: center;
+text-decoration: underline;
+}
+
+.homepage1{
+margin-left: 20px;
+}
+
+.homepage1 > p{
+margin-left: 30px;
+}
+
+body > ul{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 10px 0px;
+  padding: 0px;
+}
+
+body > ul > li{
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+body > ul > li > a{
+  text-decoration: none;
+  color: inherit;
+  transition:0.3s linear;
+}
+
+nav > ul > li:first-of-type{
+  text-align: left;
+}
+
+nav > ul > li:last-of-type{
+  text-align: right;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  float: left;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: gray;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+#contentWrapper{
+    background-color: whitesmoke;
+    padding: 10px 0px;
+}
+
+footer{
+    margin-top: 10px;
+    background-color: #333;
+    color: white;
+    padding: 10px 10px;
+}
+
+#openingstijden{
+  margin-left: 10px;
+  width: 25%;
+}
+
+#contact{
+  background-color: white;
+  padding: 5px 5px 5px 5px;
+  line-height: 2.2;
+  border-radius: 5px 5px 5px 5px;
+}
+
+#maps{
+  background: white;
+  float: right;
+  padding-left: 40px;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  size: 2px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+table{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+form{
+  margin-left: 40px;
+}
+
+footer > div:last-of-type{
+  text-align: right;
+}
+
+footer > div:first-of-type{
+  text-align: left;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 40%;
+  position: relative;
+  margin: auto;
+  text-align: left;
+  display: grid;
+  grid-template-columns: auto 2fr;
+  grid-template-rows: auto 15px;
+  grid-column-gap: 20px;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next, .mySlides {
+  grid-row: 1 / 2;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: lightgray;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  align-self: center;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  justify-self: end;
+}
+
+.prev {
+  justify-self: start;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+hr.solid {
+  border-top: 3px solid #bbb;
+  margin-bottom: 10px;
+}
+
+.txtmtb {
+  margin-left: 40px;
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+}
+
+.loginform{
+  background-color: white;
+  padding: 20px;
+}
+
+.headerlogin{
+  color: white;
+}
+#myDropdown{
+  margin-top: 50px;
+  list-style-type: none;
+}
+
+.merken{
+  background-color: white;
+  margin: 5px 5px 5px 40px;
+}
+#merk{
+  margin: 10px 10px 10px 10px;
+}
+
+.tableRewiew{
+  margin-top: 30px;
+  margin-left: 40px;
+  height: 200px; 
+  overflow: auto;
+}
+
+.tableRewiew > ul > li{
+  height: auto;
+}
+
+#mtbSession{
+  width: 60%;
+  height: auto;
+  margin-left: 20px;
+}
+
+#fietsCube{
+  width: 30%;
+  height: auto;
+  margin-left: 20px;
+}
+
+#beschrijvingFietsen{
+  padding-right: 80px;
+}
