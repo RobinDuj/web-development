@@ -34,6 +34,25 @@
 
     <div id="contentWrapper">
         <?php
+            $link = mysqli_connect("localhost", "root", "", "fietsen") 
+                or die("Verbinding mislukt: " . mysqli_connect_error());
+            if(!empty($_POST["naamcontact"]))
+            {
+                mysqli_query($link, "INSERT INTO contact (naam, email, omschrijving) 
+                                    VALUES ('" . htmlspecialchars($_POST["naam"]) . "', '" . htmlspecialchars($_POST["email"]) . "', '" . htmlspecialchars($_POST["omschrijving"]) . "')");
+            }
+            if(!empty($_POST["model"]))
+            {
+                mysqli_query($link, "INSERT INTO herstellingen (naam, email, model, omschrijving) 
+                                    VALUES ('" . htmlspecialchars($_POST["naam"]) . "', '" . htmlspecialchars($_POST["email"]) . "', '" . htmlspecialchars($_POST["model"]) . "', '" . htmlspecialchars($_POST["omschrijving"]) . "')");
+            }
+            if(!empty($_POST["naamaccount"]))
+                    {
+                        mysqli_query($link,"UPDATE  beoordeling
+                                        SET     naam = '".$_POST["naamaccount"]."',
+                                                review = '".$_POST["reviewaccount"]."'
+                                        WHERE   id = '".$_POST["idaccount"]."'") or die(mysqli_error($link));
+                    }
             if(isset($_GET["request"]))
                 include_once($_GET["request"].".php");
             else

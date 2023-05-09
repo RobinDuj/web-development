@@ -14,7 +14,7 @@
         <table border="1" width="60%" class="contactformulier">
             <tr>
                 <td width="15%"><label for="naam">Naam:</label></td>
-                <td><input type="text" name="naam" id="naam" required style="width:35%;"></td>
+                <td><input type="text" name="naamcontact" id="naam" required style="width:35%;"></td>
             </tr>
             <tr>
                 <td><label for="email">Emailadres:</label></td>
@@ -36,10 +36,10 @@
             or die("Verbinding mislukt: " . mysqli_connect_error());
 
         // Is er POST-informatie? Verwerk die en sla op in de database.
-        if(!empty($_POST["naam"]))
+        if(!empty($_POST["naamcontact"]))
         {
             mysqli_query($link, "INSERT INTO contact (naam, email, omschrijving) 
-                                VALUES ('" . htmlspecialchars($_POST["naam"]) . "', '" . htmlspecialchars($_POST["email"]) . "', '" . htmlspecialchars($_POST["omschrijving"]) . "')");
+                                VALUES ('" . htmlspecialchars($_POST["naamcontact"]) . "', '" . htmlspecialchars($_POST["email"]) . "', '" . htmlspecialchars($_POST["omschrijving"]) . "')");
         }
     ?>
     <br>

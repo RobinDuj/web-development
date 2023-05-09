@@ -37,7 +37,7 @@
         <table border="1" width="40%">
             <tr>
                 <td width="15%"><label for="naam">Naam:</label></td>
-                <td><input type="text" name="naam" id="naam" required style="width:70%;"></td>
+                <td><input type="text" name="naamreview" id="naam" required style="width:70%;"></td>
             </tr>
             <tr style="height: 200px;">
                 <td><label for="review">Beoordeling:</label></td>
@@ -56,17 +56,17 @@
         or die("Verbinding mislukt: " . mysqli_connect_error());
 
     // Is er POST-informatie? Verwerk die en sla op in de database.
-    if(!empty($_POST["naam"]))
+    if(!empty($_POST["naamreview"]))
     {
         mysqli_query($link, "INSERT INTO beoordeling (naam, review) 
-                            VALUES ('" . htmlspecialchars($_POST["naam"]) . "', '" . htmlspecialchars($_POST["review"]) . "')");
+                            VALUES ('" . htmlspecialchars($_POST["naamreview"]) . "', '" . htmlspecialchars($_POST["review"]) . "')");
     }
 ?>
 
 <div class="tableRewiew">
     <table border="1" width="100%">
         <tr>
-            <th><u>Naam</u></th>
+            <th width="30%"><u>Naam</u></th>
             <th><u>Beoordeling</u></th>
         </tr>
 
