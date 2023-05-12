@@ -12,8 +12,11 @@
         session_start();
         session_unset();
         session_destroy();
+        header("Location: login.php");
     ?>
-    <p>U bent nu uitgelogd!</p>
-    <a href="index.php?request=account">Ga terug naar login.</a>
+    <div class="logout">
+        <p>U bent nu uitgelogd!</p>
+        <a href="index.php?request=account">Ga terug naar login.</a>        
+    </div>
 </body>
 </html>

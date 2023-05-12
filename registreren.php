@@ -24,11 +24,9 @@
     </div>
 
     <?php
-        // Leg een verbinding met de database.
         $link = mysqli_connect("localhost", "root", "", "fietsen") 
             or die("Verbinding mislukt: " . mysqli_connect_error());
 
-        // Is er POST-informatie? Verwerk die en sla op in de database.
         if(!empty($_POST["email"]))
         {
             mysqli_query($link, "INSERT INTO users (email, wachtwoord) 

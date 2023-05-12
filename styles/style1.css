@@ -210,7 +210,6 @@ footer{
 #maps{
   background: white;
   float: right;
-  padding-left: 40px;
 }
 
 .column {
@@ -375,4 +374,10 @@ hr.solid {
 
 #beschrijvingFietsen{
   padding-right: 80px;
+}
+
+.logout{
+  color: black;
+  background-color: white;
+  padding: 5px 5px 5px 5px;
 }

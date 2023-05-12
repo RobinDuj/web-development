@@ -58,3 +58,22 @@
         </tr>
     </div>
 <br>
+
+<hr class="solid">
+
+<h2>Specialized S-Works Enduro LTD 29 GX Eagle 2022</h2>
+<img src="images/specialized enduro.jpg" id="mtbSession">  
+<div class="txtmtb">
+        <p>€ 15.998,99</p>
+        <h3>UITRUSTING:</h3>
+        <tr>
+            <div id="beschrijvingFietsen">
+                <td>Dit is de fiets die het genre definieert dat zijn naam draagt. De S-Works Enduro heeft een bommenwerper-toch-lichtgewicht carbon frame dat zalig het terrein verpulverd. En het is absoluut afgemonteerd om te strijden. Laat het kwijlen beginnen.</td>
+                <td><h3>Kenmerken van de S-Works Enduro:</h3></td>
+                <p>Geheel nieuw ontwerp met 170 millimeter suspension en een ultralichte carbonverbinding.</p>
+                <p>Topkwaliteit ROCKSHOX voor en achtervering voor ultieme controle en afstemming.</p>
+                <p>Volledige Sram XO-aandrijving en vier-piston Code RSC-schijfremmen.</p>               
+            </div>
+        </tr>
+    </div>
+<br>

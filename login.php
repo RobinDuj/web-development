@@ -3,11 +3,9 @@
 
     if(!empty($_POST))
     {
-        // POST info omzetten naar SESSION info.
         $_SESSION["email"] = $_POST["email"];
         $_SESSION["wachtwoord"] = $_POST["wachtwoord"];
 
-        // Verspringen naar de volgende pagina.
         header("Location: index.php?request=account");
     }
     else
